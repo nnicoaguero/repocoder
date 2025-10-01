@@ -1,0 +1,166 @@
+/* Reset y fuente base */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: #f9be3d !important; /* Color de fondo principal */
+}
+
+/* =====================
+   TIPOGRAFÍA GENERAL
+   ===================== */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, .btn, .card, .card-title, .card-subtitle, .card-body {
+  font-family: "Share Tech", Arial, sans-serif !important; /* Aplica Share Tech a todo el sitio */
+  font-weight: 400;
+  font-style: normal;
+}
+
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* HEADER RESPONSIVE */
+header {
+  background-color: #22396b; /* Color de fondo del header */
+  display: flex; /* Elementos en fila */
+  align-items: center; /* Centra verticalmente */
+  justify-content: space-between; /* Espacio entre logo/título y menú */
+  padding: 0 5vw; /* Espaciado horizontal */
+  height: 90px; /* Alto del header */
+  position: relative;
+}
+
+.logo {
+  display: flex; /* Logo e h1 en fila */
+  align-items: center; /* Centra verticalmente */
+}
+
+.logo img {
+  height: 70px; /* Tamaño del logo */
+  width: auto;
+  margin-right: 20px; /* Espacio entre logo y h1 */
+  margin-left: 0;
+  display: block;
+}
+
+.logo h1 {
+  color: white; /* Color del texto */
+  font-size: 2.2rem; /* Tamaño del título */
+  font-weight: bold;
+  text-transform: uppercase; /* Mayúsculas */
+  margin: 0;
+  text-align: left; /* Alineado a la izquierda */
+  padding-left: 10px; /* Espacio respecto al logo */
+}
+
+nav {
+  margin-left: auto; /* Empuja el menú a la derecha */
+}
+
+.nav-links {
+  display: flex; /* Enlaces en fila */
+  gap: 20px; /* Espacio entre enlaces */
+  list-style: none; /* Sin viñetas */
+  margin: 0;
+  justify-content: flex-end; /* Alinea a la derecha */
+}
+
+.nav-links li a {
+  color: white; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.2s; /* Efecto hover */
+}
+
+.nav-links li a:hover {
+  color: #f9be3d; /* Color al pasar el mouse */
+}
+
+.btn button {
+  background-color: #f9be3d; /* Color de fondo del botón */
+  color: #22396b; /* Color de texto del botón */
+  border: none;
+  padding: 4px 10px; /* Rectángulo más chico */
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem; /* Mantiene el tamaño de la tipografía */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn button:hover {
+  background-color: #ffe08a; /* Color hover del botón */
+}
+
+
+/* Fondo principal y tipografía */
+body {
+  background-color: #f9be3d !important; /* Color de fondo principal */
+  font-family: "Nunito", sans-serif;
+}
+
+
+p {
+  text-align: justify; /* Justifica los párrafos */
+  margin-bottom: 18px;
+}
+
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+  background: #22396b;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 12px 0;
+  margin-top: 40px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.footer-section h3 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #ffe08a;
+}
+
+.footer-section {
+  min-width: 120px;
+}
+
+/* =====================
+   BOTÓN CONTACTO
+   ===================== */
+.btn button {
+  background-color: #f9be3d; /* Color de fondo del botón */
+  color: #22396b; /* Color de texto del botón */
+  border: none;
+  padding: 4px 10px; /* Rectángulo más chico */
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1rem; /* Mantiene el tamaño de la tipografía */
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn button:hover {
+  background-color: #ffe08a; /* Color hover del botón */
+}
+
+
