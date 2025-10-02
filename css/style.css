@@ -11,9 +11,7 @@ body {
   background-color: #f9be3d !important; /* Color de fondo principal */
 }
 
-/* =====================
-   TIPOGRAFÍA GENERAL
-   ===================== */
+/* tipografia general */
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, .btn, .card, .card-title, .card-subtitle, .card-body {
   font-family: "Share Tech", Arial, sans-serif !important; /* Aplica Share Tech a todo el sitio */
   font-weight: 400;
@@ -26,20 +24,20 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, .btn, .card, .card-title, .card-
   font-style: normal;
 }
 
-/* HEADER RESPONSIVE */
+/* header responsive */
 header {
   background-color: #22396b; /* Color de fondo del header */
   display: flex; /* Elementos en fila */
   align-items: center; /* Centra verticalmente */
-  justify-content: space-between; /* Espacio entre logo/título y menú */
+  justify-content: space-between; /* Espacio entre logo y el titulo y menú */
   padding: 0 5vw; /* Espaciado horizontal */
   height: 90px; /* Alto del header */
   position: relative;
 }
 
 .logo {
-  display: flex; /* Logo e h1 en fila */
-  align-items: center; /* Centra verticalmente */
+  display: flex; 
+  align-items: center; 
 }
 
 .logo img {
@@ -67,7 +65,7 @@ nav {
 .nav-links {
   display: flex; /* Enlaces en fila */
   gap: 20px; /* Espacio entre enlaces */
-  list-style: none; /* Sin viñetas */
+  list-style: none; 
   margin: 0;
   justify-content: flex-end; /* Alinea a la derecha */
 }
@@ -91,7 +89,7 @@ nav {
   padding: 4px 10px; /* Rectángulo más chico */
   border-radius: 4px;
   font-weight: bold;
-  font-size: 1rem; /* Mantiene el tamaño de la tipografía */
+  font-size: 1rem; /* Mantiene el tamaño de la tgitipografía */
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -114,9 +112,7 @@ p {
 }
 
 
-/* =====================
-   FOOTER
-   ===================== */
+/* footer */
 footer {
   background: #22396b;
   color: #fff;
@@ -145,9 +141,7 @@ footer {
   min-width: 120px;
 }
 
-/* =====================
-   BOTÓN CONTACTO
-   ===================== */
+/* boton de contacto */
 .btn button {
   background-color: #f9be3d; /* Color de fondo del botón */
   color: #22396b; /* Color de texto del botón */
