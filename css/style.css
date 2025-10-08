@@ -1,3 +1,4 @@
+
 /* Reset y fuente base */
 * {
   box-sizing: border-box;
@@ -6,108 +7,95 @@
   font-family: "Nunito", sans-serif;
   font-size: 20px;
 }
+html{
+  scroll-behavior: smooth; /* Suavizador del scrol */
+}
+
+/* tipografia */
+
+/* Removed stray curly brace block that caused syntax error */
 
 body {
   background-color: #f9be3d !important; /* Color de fondo principal */
 }
 
-/* tipografia general */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, .btn, .card, .card-title, .card-subtitle, .card-body {
-  font-family: "Share Tech", Arial, sans-serif !important; /* Aplica Share Tech a todo el sitio */
-  font-weight: 400;
-  font-style: normal;
-}
-
-.share-tech-regular {
-  font-family: "Share Tech", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+ /* todo los codigos de colores los busque en la pagina oficial de Boca juniors */
 
 /* header responsive */
+/* lo realice guiandome con videos  */
 header {
-  background-color: #22396b; /* Color de fondo del header */
-  display: flex; /* Elementos en fila */
-  align-items: center; /* Centra verticalmente */
-  justify-content: space-between; /* Espacio entre logo y el titulo y menú */
-  padding: 0 5vw; /* Espaciado horizontal */
-  height: 90px; /* Alto del header */
-  position: relative;
+  background-color: #22396b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  height: 90px;
 }
-
 .logo {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
 }
-
 .logo img {
-  height: 70px; /* Tamaño del logo */
+  height: 70px;
   width: auto;
-  margin-right: 20px; /* Espacio entre logo y h1 */
+  margin-right: 20px;
   margin-left: 0;
   display: block;
 }
-
 .logo h1 {
-  color: white; /* Color del texto */
-  font-size: 2.2rem; /* Tamaño del título */
+  color: #fff;
+  font-size: 2.2rem;
   font-weight: bold;
-  text-transform: uppercase; /* Mayúsculas */
+  text-transform: uppercase;
   margin: 0;
-  text-align: left; /* Alineado a la izquierda */
-  padding-left: 10px; /* Espacio respecto al logo */
+  text-align: left;
+  padding-left: 10px;
 }
-
 nav {
-  margin-left: auto; /* Empuja el menú a la derecha */
+  margin-left: auto;
 }
-
-.nav-links {
-  display: flex; /* Enlaces en fila */
-  gap: 20px; /* Espacio entre enlaces */
-  list-style: none; 
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
   margin: 0;
-  justify-content: flex-end; /* Alinea a la derecha */
+  justify-content: flex-end;
 }
-
-.nav-links li a {
-  color: white; /* Color de los enlaces */
-  text-decoration: none; /* Sin subrayado */
+nav ul li a { 
+  color: #fff;
+  text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
-  transition: color 0.2s; /* Efecto hover */
+
 }
 
-.nav-links li a:hover {
-  color: #f9be3d; /* Color al pasar el mouse */
+.nav ul 
+nav ul li a:hover {
+  color: #f9be3d;
 }
-
 .btn button {
-  background-color: #f9be3d; /* Color de fondo del botón */
-  color: #22396b; /* Color de texto del botón */
+  background-color: #f9be3d;
+  color: #22396b;
   border: none;
-  padding: 4px 10px; /* Rectángulo más chico */
+  padding: 4px 10px;
   border-radius: 4px;
   font-weight: bold;
-  font-size: 1rem; /* Mantiene el tamaño de la tgitipografía */
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s;
 }
-
 .btn button:hover {
-  background-color: #ffe08a; /* Color hover del botón */
+  background-color: #ffe08a;
 }
 
 
 /* Fondo principal y tipografía */
 body {
-  background-color: #f9be3d !important; /* Color de fondo principal */
-  font-family: "Nunito", sans-serif;
+  background-color: #f9be3d /* Color de fondo principal */
 }
 
 
 p {
-  text-align: justify; /* Justifica los párrafos */
+  text-align: justify; /* Justificacion de párrafos */
   margin-bottom: 18px;
 }
 
@@ -141,7 +129,7 @@ footer {
   min-width: 120px;
 }
 
-/* boton de contacto */
+/* boton de contacto dentro del header*/
 .btn button {
   background-color: #f9be3d; /* Color de fondo del botón */
   color: #22396b; /* Color de texto del botón */
@@ -151,10 +139,180 @@ footer {
   font-weight: bold;
   font-size: 1rem; /* Mantiene el tamaño de la tipografía */
   cursor: pointer;
-  transition: background 0.2s;
 }
 .btn button:hover {
   background-color: #ffe08a; /* Color hover del botón */
 }
 
+/* Sección del scroll y botón central en imagen */
+.scroll-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Botón */
+.btn-scroll button {
+  background-color: #f9be3d;
+  color: #22396b;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 1.2rem; 
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #22396b;
+  transition: all 0.3s ease; /* para transición suave */
+}
+
+.btn-scroll button:hover {
+  background-color: #ffe08a;
+  transform: translateY(-2px); /* Efecto de elevación */
+  box-shadow: 0 4px 12px #22396b
+}
+
+/* recuadro a div */
+div{
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+
+/* prueba */
+
+h1{
+  text-align: center;       
+}
+
+
+/* h2 */
+h2{
+  text-align: center;
+}
+
+h2{
+ text-decoration: underline;
+ text-decoration: color#22396b 
+}
+
+/* h3 */
+h3 {
+  text-align: left;
+  margin-left: 50px;
+  border-left: 4px solid #22396b;  
+  padding-left: 10px;
+  color: #22396b;
+}
+
+h4{
+  text-align: left;
+  margin-left: 50px;
+  border-left: 4px solid #22396b;  
+  padding-left: 10px;
+  color: #22396b;
+}
+
+h5{
+  text-align: center;
+  color: black;
+}
+
+/* ul */
+ul {
+  list-style-type: circle;
+  margin-left: 40px;
+}
+
+ul li::before {
+  color: #22396b;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+  margin-left: 40px;
+}
+
+/* parrafos */
+
+p {
+  margin-left: 40px;
+}
+
+/*================media queri=============== */ 
+
+
+/* para computadora desde 1024px */
+@media (min-width: 1024px){
+ #contenido-principal{
+  font-size: 20px;
+  padding: 30px;
+ }
+}
+ 
+@media (min-width: 1024px){
+  #sudamericana {
+    font-size: 20px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1024px){
+  #intercontinental {
+    font-size: 20px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1024px){
+  #libertadores {
+    font-size: 20px;
+    padding: 30px;
+  }
+}
+
+
+/* para tablets minimo 600px */
+
+ @media (min-width: 600px){
+  #contenido-principal {
+    font-size: 18px;
+    padding: 20px;
+  }
+ }
+
+ @media (min-width: 600px){
+  #sudamericana {
+    font-size: 18px;
+    padding: 20px;
+  }
+ }
+ @media (min-width: 600px){
+  #intercontinental {
+    font-size: 18px;
+    padding: 20px;
+  }
+ }
+ @media (min-width: 600px){
+  #libertadores {
+    font-size: 18px;
+    padding: 20px;
+  }
+ }
 

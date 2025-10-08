@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copa Sudamericana Boca Juniors</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Share+Tech&display=swap" rel="stylesheet">
+    <!-- fuente -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Share+Tech&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../imagenes/logoboca.png" alt="logo boca juniors">
+            <a href="../index.html">
+                <img src="../imagenes/logoboca.png" alt="logo boca juniors">
+            </a>
             <h1>club atletico boca juniors</h1>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="../index.html">inicio</a></li>
-                <li><a href="#">nosotros</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn"><button>Contacto</button></a>
+        
+       <a href="../page/conctacto.html" class="btn"><button>Contacto</button></a>
     </header>
     <main>
-        <div class="sudamericana-2004">
+    <section id="sudamericana"
+         
+         class="sudamericana-2004">
             <h2>Copa Sudamericana 2004</h2>
             <div class="octavos-final">
                 <h3>Octavos de final</h3>
@@ -59,7 +60,6 @@
                     <li>Vuelta: Boca Juniors 2-0 Bolívar</li>
                 </ul>
                 <p>Con este resultado Boca Juniors se consagró campeón de la Copa Sudamericana por primera vez en su historia.</p>
-                <img src="../imagenes/boca bolivar.jpg" alt="Boca Juniors vs Bolívar">
             </div>
             <div class="plantel-campeon">
                 <h3>Plantel campeón</h3>
@@ -106,7 +106,6 @@
                     <li>Vuelta: Boca Juniors 2-1 Pumas UNAM (Boca ganó 4-2 en penales)</li>
                 </ul>
                 <p>Con este resultado Boca Juniors se consagró campeón de la Copa Sudamericana por segunda vez en su historia.</p>
-                <img src="../imagenes/boca pumas.jpg" alt="Boca Juniors vs Pumas UNAM">
             </div>
             <div class="plantel-campeon">
                 <h3>Plantel campeón</h3>
@@ -119,6 +118,60 @@
                 </ul>
             </div>
         </div>
+        <!-- carrusel de bootstrap -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../imagenes/boca bolivar.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>sudamericana 2004</h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../imagenes/boca pumas.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>sudamericana 2005</h5>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+    </section>
+</div>
     </main>
+    <!-- js de bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <footer>
+        <div class="footer-main">
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="contact-info">
+                    <p><strong>Teléfono:</strong> <span contenteditable="true" id="telefono">+59 3624807034</span></p>
+                    <p><strong>Email:</strong> <span contenteditable="true" id="email">nnicoagueroo@gmail.com</span></p>
+                    <p><strong>Dirección:</strong> <span contenteditable="true" id="direccion">Brandsen 805 C1161AAQ, La Boca, Buenos Aires, Argentina</span></p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Horarios</h3>
+                <div class="schedule-info">
+                    <p><strong>Estadio:</strong></p>
+                    <p contenteditable="true" id="horarios-estadio">Lunes a Domingo: 6:00 - 23:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
