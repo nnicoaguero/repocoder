@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Reset y fuente base */
 * {
   box-sizing: border-box;
@@ -7,8 +6,7 @@
   font-family: "Nunito", sans-serif;
   font-size: 20px;
 }
-
-html {
+html{
   scroll-behavior: none; /* Desactiva desplazamiento suave */
 }
 
@@ -18,11 +16,13 @@ html, body {
 }
 
 /* tipografia */
+
 body {
   background-color: #f9be3d !important; /* Color de fondo principal */
 }
 
-/* todo los codigos de colores los busque en la pagina oficial de Boca juniors */
+ /* todo los codigos de colores los busque en la pagina oficial de Boca juniors */
+
 /* header responsive */
 /* lo realice guiandome con videos  */
 header {
@@ -33,12 +33,10 @@ header {
   padding: 0 5vw;
   height: 90px;
 }
-
 .logo {
   display: flex;
   align-items: center;
 }
-
 .logo img {
   height: 70px;
   width: auto;
@@ -46,7 +44,6 @@ header {
   margin-left: 0;
   display: block;
 }
-
 .logo h1 {
   color: #fff;
   font-size: 2.2rem;
@@ -56,11 +53,9 @@ header {
   text-align: left;
   padding-left: 10px;
 }
-
 nav {
   margin-left: auto;
 }
-
 nav ul {
   display: flex;
   gap: 20px;
@@ -68,18 +63,18 @@ nav ul {
   margin: 0;
   justify-content: flex-end;
 }
-
-nav ul li a {
+nav ul li a { 
   color: #fff;
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
+
 }
 
-.nav ul nav ul li a:hover {
+.nav ul 
+nav ul li a:hover {
   color: #f9be3d;
 }
-
 .btn button {
   background-color: #f9be3d;
   color: #22396b;
@@ -90,20 +85,22 @@ nav ul li a {
   font-size: 1rem;
   cursor: pointer;
 }
-
 .btn button:hover {
   background-color: #ffe08a;
 }
 
+
 /* Fondo principal y tipografía */
 body {
-  background-color: #f9be3d;
+  background-color: #f9be3d /* Color de fondo principal */
 }
+
 
 p {
   text-align: justify; /* Justificacion de párrafos */
   margin-bottom: 18px;
 }
+
 
 /* footer */
 footer {
@@ -145,12 +142,12 @@ footer {
   font-size: 1rem; /* Mantiene el tamaño de la tipografía */
   cursor: pointer;
 }
-
 .btn button:hover {
   background-color: #ffe08a; /* Color hover del botón */
 }
 
 /* Sección del scroll y botón central en imagen */
+
 .scroll-section {
   min-height: 100vh;
   display: flex;
@@ -178,7 +175,7 @@ footer {
   border: none;
   padding: 16px 32px;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
   font-weight: bold;
 }
 
@@ -189,7 +186,7 @@ footer {
   border: none;
   padding: 16px 32px;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.2rem; 
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 2px 8px #22396b;
@@ -198,11 +195,11 @@ footer {
 
 .btn-scroll button:hover {
   background-color: #ffe08a;
-  box-shadow: 0 4px 12px #22396b;
+  box-shadow: 0 4px 12px #22396b
 }
 
 /* recuadro a div */
-div {
+div{
   border-radius: 10px;
 }
 
@@ -210,39 +207,43 @@ h1 {
   text-align: center;
 }
 
+
+
 /* prueba */
-h1 {
-  text-align: center;
+
+h1{
+  text-align: center;       
 }
+
 
 /* h2 */
-h2 {
+h2{
   text-align: center;
 }
 
-h2 {
-  text-decoration: underline;
-  text-decoration: color #22396b;
+h2{
+ text-decoration: underline;
+ text-decoration: color#22396b 
 }
 
 /* h3 */
 h3 {
   text-align: left;
   margin-left: 50px;
-  border-left: 4px solid #22396b;
+  border-left: 4px solid #22396b;  
   padding-left: 10px;
   color: #22396b;
 }
 
-h4 {
+h4{
   text-align: left;
   margin-left: 50px;
-  border-left: 4px solid #22396b;
+  border-left: 4px solid #22396b;  
   padding-left: 10px;
   color: #22396b;
 }
 
-h5 {
+h5{
   text-align: center;
   color: black;
 }
@@ -263,123 +264,133 @@ ol {
 }
 
 /* parrafos */
+
 p {
   margin-left: 40px;
 }
 
-/*================media queri=============== */
+/*================media queri=============== */ 
+
+
 /* para computadora desde 1024px */
-@media (min-width: 1024px) {
-  #contenido-principal {
-    font-size: 20px;
-    padding: 30px;
-  }
+@media (min-width: 1024px){
+ #contenido-principal{
+  font-size: 20px;
+  padding: 30px;
+ }
 }
-@media (min-width: 1024px) {
+ 
+@media (min-width: 1024px){
   #sudamericana {
     font-size: 20px;
     padding: 30px;
   }
 }
-@media (min-width: 1024px) {
+
+@media (min-width: 1024px){
   #intercontinental {
     font-size: 20px;
     padding: 30px;
   }
 }
-@media (min-width: 1024px) {
+
+@media (min-width: 1024px){
   #libertadores {
     font-size: 20px;
     padding: 30px;
   }
 }
-@media (min-width: 1024px) {
-  #contacto {
-    font-size: 18px;
-    padding: 20px;
-  }
-}
-@media (min-width: 1024px) {
-  #historia {
-    font-size: 18px;
-    padding: 20px;
-  }
-}
+ @media (min-width: 1024px){   
+  #contacto
+    {font-size: 18px;
+    padding: 20px; } }
+ 
+ @media (min-width: 1024px){   
+  #historia
+    {font-size: 18px;
+    padding: 20px; } }
+
+
 /* para tablets minimo 600px */
-@media (min-width: 600px) {
+
+ @media (min-width: 600px){
   #contenido-principal {
     font-size: 18px;
     padding: 20px;
   }
-}
-@media (min-width: 600px) {
+ }
+
+ @media (min-width: 600px){
   #sudamericana {
     font-size: 18px;
     padding: 20px;
   }
-}
-@media (min-width: 600px) {
+ }
+ @media (min-width: 600px){
   #intercontinental {
     font-size: 18px;
     padding: 20px;
   }
-}
-@media (min-width: 600px) {
+ }
+ @media (min-width: 600px){
   #libertadores {
     font-size: 18px;
     padding: 20px;
   }
-}
-@media (min-width: 600px) {
-  #contacto {
-    font-size: 18px;
-    padding: 20px;
-  }
-}
-@media (min-width: 600px) {
-  #historia {
-    font-size: 18px;
-    padding: 20px;
-  }
-}
+ }
+
+  @media (min-width: 600px){   
+  #contacto 
+    {font-size: 18px;
+    padding: 20px; } }
+   
+   @media (min-width: 600px){   
+  #historia
+    {font-size: 18px;
+    padding: 20px; } }
+
+
 /*  para celulares maximo 375px */
-@media (max-width: 375px) {
+ @media (max-width: 375px){
   #contenido-principal {
     font-size: 18px;
     padding: 20px;
   }
-}
-@media (max-width: 375px) {
+ }
+
+ @media (max-width: 375px){
   #sudamericana {
     font-size: 18px;
     padding: 20px;
   }
-}
-@media (max-width: 375px) {
+ }
+ @media (max-width: 375px){
   #intercontinental {
     font-size: 18px;
     padding: 20px;
   }
-}
-@media (max-width: 375px) {
-  #libertadores {
-    font-size: 18px;
-    padding: 20px;
-  }
-}
-@media (max-width: 375px) {
-  #contacto {
-    font-size: 18px;
-    padding: 20px;
-  }
-}
-@media (max-width: 375px) {
-  #historia {
-    font-size: 18px;
-    padding: 20px;
-  }
-}
-/*  */
+ }
+ @media (max-width: 375px){   
+  #libertadores 
+    {font-size: 18px;
+    padding: 20px; } }
+
+ @media (max-width: 375px){   
+  #contacto
+    {font-size: 18px;
+    padding: 20px; } }
+  
+ @media (max-width: 375px){   
+  #historia
+    {font-size: 18px;
+    padding: 20px; } }
+  
+
+
+
+ /*  */
+
+
 /* Imágenes dentro del carrusel */
 #contenido-principal figure {
   margin: 16px auto;
@@ -411,11 +422,12 @@ p {
     max-height: 50vh;
   }
 }
+
 /* Imágenes dentro del carrusel */
 .carousel-item img,
 #carouselExampleCaptions img,
 .carrusel-lib img {
-  max-width: 70vw;
+  max-width: 70vw; 
   width: 100%;
   height: auto;
   max-height: 70vh;
@@ -432,60 +444,62 @@ p {
   .carrusel-lib img {
     max-width: 95vw;
     max-height: 50vh;
-  }
 }
+}
+
+
 /* seccion de pagina (contactos) */
-/* Estilos Generales */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
+    /* Estilos Generales */
+   .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+  }
+        
+   h1, h2 {
+    color: #22396b;
+  }
 
-h1, h2 {
-  color: #22396b;
-}
+  ul {
+    list-style-type: none;
+    padding: 0; 
+  }
+  
+  ul li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  ul li:before {
+    position: absolute;
+    left: 0; }
+       
+  a {
+    color: #22396b;
+    text-decoration: none;
+  }
 
-ul li {
-  margin-bottom: 15px;
-  padding-left: 20px;
-  position: relative;
-}
-
-ul li:before {
-  position: absolute;
-  left: 0;
-}
-
-a {
-  color: #22396b;
-  text-decoration: none;
-}
-
-/* Formulario de Contacto */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-input:focus, textarea:focus {
-  border-color: #22396b;
-}
-
-button {
+  /* Formulario de Contacto */
+  form {
+    display: flex;
+   flex-direction: column;
+   gap: 10px;
+  }
+ 
+  label {
+    font-weight: bold;
+    margin-bottom: 5px; 
+  }
+    
+        
+ input:focus, textarea:focus {
+  border-color: #22396b
+  }
+      
+ button {
   padding: 12px;
   background-color: #22396b;
   color: white;
@@ -498,27 +512,25 @@ button {
 button:hover {
   background-color: #22396b;
 }
-
+        
 /* Redes Sociales */
 .redes-sociales {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
-
 .redes-sociales a {
   padding: 10px 15px;
   background-color: #22396b;
   color: rgb(245, 238, 238);
   border-radius: 4px;
   text-decoration: none;
-  text-align: center;
-}
+  text-align: center;}
 
 .redes-sociales a:hover {
   background-color: #22396b;
 }
-
+        
 /* Mapa */
 iframe {
   width: 100%;
@@ -528,17 +540,22 @@ iframe {
 }
 
 /* animacion de animista */
+ 
+
 /* ----------------------------------------------
  * Generated by Animista on 2025-10-22 20:0:48
  * Licensed under FreeBSD License.
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
+
 /**
  * ----------------------------------------
  * animation tracking-in-contract
  * ----------------------------------------
  */
+
+
 @-webkit-keyframes tracking-in-contract {
   0% {
     letter-spacing: 1em;
@@ -564,6 +581,7 @@ iframe {
     letter-spacing: normal;
     opacity: 1;
   }
+
 }
 @keyframes tracking-in-contract {
   0% {
@@ -578,28 +596,20 @@ iframe {
     opacity: 1;
   }
 }
+
 .tracking-in-contract {
   animation: tracking-in-contract 2s ease-out both;
 }
 
-.header .btn, .btn-scroll button {
+%boton-base {
   display: inline-block;
   padding: 16px 32px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(34, 57, 107, 0.12);
+  box-shadow: 0 2px 8px rgba(34,57,107,0.12);
   text-align: center;
 }
 
-.btn-scroll button {
-  background: #f9be3d;
-  color: #22396b;
-}
-
-.header .btn {
-  background: transparent;
-  border: 2px solid rgba(5, 5, 3, 0.15);
-}
-
-/*# sourceMappingURL=style.css.map */
+.btn-scroll button { @extend %boton-base; background: #f9be3d; color: #22396b; }
+.header .btn { @extend %boton-base; background: transparent; border: 2px solid rgba(5, 5, 3, 0.15); }
